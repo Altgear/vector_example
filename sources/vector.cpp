@@ -30,7 +30,7 @@ vector_t &vector_t::operator=(vector_t const &other)
         size_ = other.size_;
         capacity_ = other.capacity_;
         elements_ = new int[capacity_];
-        for (unsigned int i = 0; i < size; ++i)
+        for (unsigned int i = 0; i < size_; ++i)
         {
             elements_[i] = other.elements_[i];
         }
