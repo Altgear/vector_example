@@ -91,6 +91,7 @@ void vector_t::push_back(int value)
         }
         delete[] elements_;
         elements_ = buff;
+        capacity_ *= 2;
     }
     elements_[size_] = value;
     ++size_;
