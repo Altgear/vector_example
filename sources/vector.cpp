@@ -101,7 +101,7 @@ void vector_t::pop_back()
 {
     assert(size_ != 0);
     --size_;
-    if (size_ * 4 == capacity_)
+    if (size_ * 4 == capacity_ || size == 0)
     {
         int *buff = new int[capacity_ / 2];
         for (unsigned int i = 0; i < size_; ++i)
